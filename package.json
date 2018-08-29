@@ -4,7 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server",
+    "build": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,16 @@
   "homepage": "https://github.com/DavidEngelstad/mysql-review-workshop#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "node": "^10.9.0",
+    "nodemon": "^1.18.3",
+    "path": "^0.12.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "webpack": "^4.17.1",
